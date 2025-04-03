@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VertexIT - Where Great Things Emerge</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body x-data="{ menuOpen: false }">
+    <nav>
+        <div class="nav-content">
+            <a href="#" class="logo">VertexIT</a>
+            <button class="menu-toggle" @click="menuOpen = !menuOpen">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" :class="{ 'active': menuOpen }">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Welcome to VertexIT</h1>
+            <p class="subtitle">Where Innovation Meets Excellence</p>
+            <a href="#learn-more" class="cta-button">Learn More</a>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p class="large-text">At VertexIT, we're crafting the future of technology with precision and innovation.</p>
+            <div class="feature-grid">
+                <div class="feature">
+                    <i class="fas fa-code"></i>
+                    <h3>Innovation</h3>
+                    <p>Pushing boundaries with cutting-edge solutions</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Excellence</h3>
+                    <p>Delivering outstanding results that exceed expectations</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Security</h3>
+                    <p>Protecting your digital assets with advanced security</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section gradient-bg">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Web Development</h3>
+                    <p>Creating beautiful, responsive websites that deliver results</p>
+                </div>
+                <div class="service-card">
+                    <h3>Cloud Solutions</h3>
+                    <p>Scalable cloud infrastructure for modern businesses</p>
+                </div>
+                <div class="service-card">
+                    <h3>IT Consulting</h3>
+                    <p>Expert guidance for your digital transformation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p class="large-text">Ready to start your next project?</p>
+            <a href="mailto:contact@vrxt.eu" class="cta-button">Contact Us</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>VertexIT</h4>
+                    <p>Creating exceptional digital experiences</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: contact@vrxt.eu</p>
+                    <p>Web: vrxt.eu</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 VertexIT. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
